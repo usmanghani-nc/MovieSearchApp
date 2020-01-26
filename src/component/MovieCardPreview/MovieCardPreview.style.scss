@@ -1,0 +1,42 @@
+.card-primary {
+  padding: 10px;
+  display: flex;
+  transition: 0.25s ease;
+  cursor: pointer;
+  margin: 1.1rem 0;
+  border: 1px solid rgba(184, 184, 184, 0.39);
+
+  p {
+    margin-bottom: 0;
+  }
+
+  // movie-info card right side
+  .movie-info {
+    padding: 5px 0 0 10px;
+
+    .movie-title {
+      font-size: 1.1em;
+      font-weight: 600;
+      line-height: 1.3rem;
+      height: 40px;
+    }
+
+    .released-date {
+      font-size: 13px;
+      color: rgb(161, 161, 161);
+      margin-bottom: 0.5rem;
+    }
+
+    .movie-overview {
+      font-size: 12px;
+      margin-bottom: 1.4rem;
+    }
+  }
+
+  &:hover {
+    -webkit-box-shadow: 0px 9px 27px -1px rgba(0, 0, 0, 0.66);
+    -moz-box-shadow: 0px 9px 27px -1px rgba(0, 0, 0, 0.66);
+    box-shadow: 0px 9px 27px -1px rgba(0, 0, 0, 0.66);
+    transform: translateY(-1rem);
+  }
+}
