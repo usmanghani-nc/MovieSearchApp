@@ -1,0 +1,26 @@
+.logo-container {
+  background-color: #212c39;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  .logo {
+    display: flex;
+    text-decoration: none;
+
+    p {
+      margin: 0;
+      color: #fff;
+    }
+
+    .logo-icon {
+      color: rgb(7, 138, 7);
+      font-size: 4rem;
+    }
+
+    .logo-text {
+      font-size: 1.3rem;
+      font-weight: 700;
+      align-self: center;
+      margin-left: 1%;
+    }
+  }
+}

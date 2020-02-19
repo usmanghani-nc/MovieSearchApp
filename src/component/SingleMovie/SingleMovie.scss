@@ -1,0 +1,99 @@
+.Single-movie {
+  padding: 100px 0 100px 0;
+  min-height: 100%;
+
+  // picture
+  .Single-movie-pic {
+    margin-left: auto;
+    box-sizing: border-box;
+    border-width: 0px;
+    border-radius: 4px;
+    width: 75%;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+
+    img {
+      height: 100%;
+      width: 100%;
+    }
+  }
+  .Single-movie-container {
+    border: 1px solid #212c39;
+    border-radius: 5px;
+    padding: 5px 10px;
+    height: 100%;
+
+    // title
+    .movie-title {
+      h2 {
+        display: inline-block;
+        font-size: 2.4em;
+        font-weight: 700;
+      }
+
+      .released-date {
+        opacity: 0.6;
+        font-size: 1.1rem;
+        font-weight: 400;
+      }
+    }
+
+    // rating
+    .info {
+      p {
+        font-size: 1rem;
+        .icon-star {
+          color: yellow;
+        }
+      }
+
+      .genral {
+        font-size: 0.9rem;
+        margin-left: 10px;
+        margin-top: auto;
+        span {
+          margin-left: 5px;
+        }
+      }
+
+      //status
+      .status {
+        font-size: 0.9rem;
+        margin-left: 10px;
+        margin-top: auto;
+        font-weight: 600;
+      }
+    }
+    // run-time
+    .run-time {
+      font-size: 0.9rem;
+    }
+    //overview
+    .movie-overview {
+      font-size: 2.4em;
+      font-weight: 700;
+      p {
+        font-size: 0.9rem;
+        font-weight: 450;
+      }
+    }
+
+    // companies
+    .production_companies {
+      margin-top: 5%;
+      .companie {
+        justify-content: space-around;
+
+        .companie-img {
+          width: 25px;
+          height: 25px;
+          margin: 0 auto;
+        }
+        .companie-title {
+          font-size: 0.7rem;
+          text-align: center;
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+}

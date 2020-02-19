@@ -1,0 +1,51 @@
+footer {
+  background-color: #212c39;
+
+  .logo {
+    display: flex;
+    text-decoration: none;
+    p {
+      margin: 0;
+      color: #fff;
+    }
+
+    .logo-icon {
+      color: rgb(7, 138, 7);
+      font-size: 4rem;
+    }
+
+    .logo-text {
+      font-size: 1.3rem;
+      font-weight: 700;
+      align-self: center;
+      margin-left: 1%;
+    }
+  }
+
+  .media {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    span {
+      margin-right: 10px;
+      &:nth-child(3) {
+        margin-right: 0;
+      }
+      a {
+        text-decoration: none;
+        color: #ffff;
+        font-size: 2rem;
+      }
+    }
+  }
+
+  .copy-text {
+    color: #ffff;
+    font-size: 12px;
+    padding: 0 15px;
+    margin: 0 auto;
+    padding: 5px 0 20px 0;
+  }
+}

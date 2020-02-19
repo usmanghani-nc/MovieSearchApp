@@ -1,9 +1,12 @@
 import React from 'react';
+
 import { Col } from 'react-bootstrap';
 
 import './MovieCardPreview.style.scss';
 
-const limitRecipeTitle = (title, limit = 70) => {
+import { Link } from 'react-router-dom';
+
+const Limit = (title, limit = 70) => {
   const newTitle = [];
   if (title.length > limit) {
     title.split(' ').reduce((acc, cur) => {
@@ -19,9 +22,9 @@ const limitRecipeTitle = (title, limit = 70) => {
   return title;
 };
 
-const MovieCardPreview = ({ title, overview, vote_average, poster_path, release_date }) => (
+const MovieCardPreview = ({ id, title, overview, vote_average, poster_path, release_date }) => (
   <Col md={4}>
-    <div className="card-primary ">
+    <div className="card-primary " key={id}>
       <div className="movie-pic">
         <img
           alt="poster"
@@ -35,11 +38,18 @@ const MovieCardPreview = ({ title, overview, vote_average, poster_path, release_
 
         <p className="released-date"> {release_date} </p>
 
-        <p className="movie-overview"> {limitRecipeTitle(overview)} </p>
+        <p className="movie-overview"> {Limit(overview)} </p>
 
-        <p>
-          Rating: {vote_average}
-          /10
+        <p className="movie-rating">
+          <span className="movie-rating">
+            Rating: {vote_average}
+            /10
+          </span>
+          <span className="movie-detail">
+            <Link className="movie-detail-link" to={`/SingleMovie/${id}`}>
+              More
+            </Link>
+          </span>
         </p>
       </div>
     </div>

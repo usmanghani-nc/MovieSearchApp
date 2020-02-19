@@ -31,6 +31,17 @@
       font-size: 12px;
       margin-bottom: 1.4rem;
     }
+    .movie-rating {
+      font-size: 13px;
+      display: flex;
+      justify-content: space-between;
+      .movie-detail {
+        .movie-detail-link {
+          text-decoration: none;
+          color: #078a07;
+        }
+      }
+    }
   }
 
   &:hover {
